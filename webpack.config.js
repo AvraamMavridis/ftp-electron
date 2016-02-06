@@ -31,7 +31,12 @@ module: {
  loaders: [
    { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
    { test: /\.css$/, loader: 'style-loader!css-loader' },
-   { test: /\.less$/, loader: 'style-loader!css-loader!less-loader'}
+   {
+     test: /\.scss$/,
+     loaders: ["style", "css", "sass"]
+   },
+   { test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
+   { test: /\.json$/, loader: 'json-loader' },
  ]
 },
  plugins: [

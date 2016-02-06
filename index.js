@@ -19,7 +19,9 @@ app.on('window-all-closed', function() {
 // initialization and ready for creating browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  var atomScreen = require('screen');
+  var size = atomScreen.getPrimaryDisplay().workAreaSize;
+  mainWindow = new BrowserWindow({width: size.width, height: size.height, resizable: true });
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');

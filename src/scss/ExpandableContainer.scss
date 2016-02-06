@@ -1,0 +1,41 @@
+
+.expandable-container
+{
+  header
+  {
+    background: $pink-background;
+    border-top: 1px solid $pink-border;
+    border-bottom: 1px solid $pink-border;
+    height: 40px;
+    line-height: 40px;
+    color: $pink-color;
+    position: relative;
+
+    .arrow
+    {
+      right: 5%;
+      top: 10px;
+      transform: rotate(180deg);
+      transition: transform .3s ease-in-out;
+      cursor: pointer;
+      
+      &.closed
+      {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .content
+  {
+    height: 200px;
+    background: $pink-content;
+    transition: height .3s ease-in-out;
+
+    &.closed
+    {
+      height: 0px;
+    }
+  }
+
+}

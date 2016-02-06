@@ -1,0 +1,27 @@
+html, body
+{
+  height: 100%;
+  margin: 0px;
+  background: $background-color;
+
+  #content
+  {
+    height: 100%;
+  }
+
+  .sidebar
+  {
+    background: $container;
+    color: $white;
+  }
+
+  .arrow
+  {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    display: inline-block;
+    background-size: 16px 16px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA4klEQVRIS+3Vvw2CQBSA8e+MlSPQ2GiipWv4bwFbB3AUB7B2AFBXMSY2Vk5gZzjzDGdAkXsQ6KCE4/tdXi5gaPgyDfdpAe+ES41oCn0pnuDmLScL1IDEu3COwcQw0iIqwMUt7GVjFlZaxAuk4xGsBVjATosUAnlxN3st8hcoipdBcgFNXIv8AGXiGiQDuDhwCWGiPeuybglXIHjCOH2EM8Ac7h14hDAoE3drBYmhd4DA3fsAyQ6oGk8jFmwEQ7n3BuqK5yGm7vg3YmawOcK2ysx970jb+6nwRXzPW8A3oeZ/+i/qn1v8Ole2sQAAAABJRU5ErkJggg==');
+  }
+}
