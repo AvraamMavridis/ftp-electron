@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "src/js/components/ExpandableContainer/package.json"
+      ]
+    }
+  }
+}
